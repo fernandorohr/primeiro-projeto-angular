@@ -17,9 +17,8 @@
 .center {
     position: relative;
     max-width: 1200px;
-    height: 600px;
     margin: auto;
-    min-height: 380px;
+    min-height: 500px;
     text-align: center;
     vertical-align: center;
 }
@@ -31,6 +30,7 @@
 
 .footer {
     position: relative;
+    margin-top: 15px;
     height: 100px;
     background-color: #303030;
 }

@@ -9,7 +9,6 @@
 }
 
 .text {
-    /* margin-top: 10px; */
     color: white;
     vertical-align: middle;
     justify-content: center;
@@ -19,8 +18,7 @@
     position: relative;
     max-width: 1200px;
     margin: auto;
-    min-height: 380px;
-    /* border: dotted red 2px; */
+    min-height: 500px;
     text-align: center;
     vertical-align: center;
 }
@@ -32,11 +30,9 @@
 
 .footer {
     position: relative;
-    bottom: 0;
     height: 100px;
     margin-top: 15px;
     background-color: #303030;
-    /* border: dotted red 2px; */
 }
 
 .icons {

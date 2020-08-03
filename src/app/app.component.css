@@ -1,6 +1,5 @@
 body {
     position: relative;
-    /* background-color: #bababa; */
 }
 
 .footer {
@@ -9,5 +8,4 @@ body {
     height: 100px;
     margin-top: 15px;
     background-color: #303030;
-    /* border: dotted red 2px; */
 }
