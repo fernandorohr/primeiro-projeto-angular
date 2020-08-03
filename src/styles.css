@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+    position: relative;
+    background-color: #303030;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.text {
+    color: white;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.center {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 500px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.welcome-text {
+    position: relative;    
+    margin-top: 100px;
+}
+
+.center-button {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.table-head {
+    background-color: #303030;
+    color: white;
+}
+
+.footer {
+    position: relative;
+    margin-top: 15px;
+    height: 100px;
+    background-color: #303030;
+}
+
+.icons {
+    color: white;
+    max-width: 250px;
+}
+
+.line {
+    background-color: white;
+}
+

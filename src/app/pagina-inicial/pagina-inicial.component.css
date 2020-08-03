@@ -1,4 +1,4 @@
-.header {
+/* .header {
     position: relative;
     background-color: #303030;
     text-align: center;
@@ -33,19 +33,21 @@
     max-width: 300px;
     margin: auto;
     margin-top: 50px;
+} */
+
+.center {
+    min-height: 200px;
 }
 
 .footer {
     position: fixed;
-    min-height: 100px;
-    background-color: #303030;
 }
 
-.icons {
+/* .icons {
     color: white;
     max-width: 250px;
 }
 
 .line {
     background-color: white;
-}
+} */
