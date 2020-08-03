@@ -32,10 +32,7 @@ export class ItinerarioOnibusComponent implements OnInit {
     //pega o ID pela rota
     const id = +this.route.snapshot.paramMap.get('id');
     this.onibusService.callItinerary(id)
-      .subscribe(data => {
-        //retira os tres ultimos itens do objeto (idlinha, nome e codigo)
-        this.list = Object.keys(data).slice(data.length - 3, data.length)
-      });
+      .subscribe(data => this.list = data);
   }
 
 }

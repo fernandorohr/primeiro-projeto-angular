@@ -1,5 +1,5 @@
 <header class="header sticky-top">
-    <h1 class="text">Itinerario da linha Selecionada</h1>
+    <h1 *ngIf="list | keyvalue" class="text">Itinerario da linha: {{list.codigo}}</h1>
 </header>
 <div class="center">
     <button class="btn btn-outline-dark btn-md" data-toggle="tooltip" title="Voltar para a pagina anterior" (click)="back()">voltar</button>

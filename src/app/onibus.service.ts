@@ -6,21 +6,27 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OnibusService {
 
-  linhasOnibus = 'http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%25&t=o';
-  linhasLotacao = 'http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%25&t=l';
-  linhasItinerario = 'http://www.poatransporte.com.br/php/facades/process.php?a=il&p=';
+  //Link da API de linhas de onibus
+  busLine = 'http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%25&t=o';
+  //Link da API de linhas de lotação
+  lotationLine = 'http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%25&t=l';
+  //Link da API de consulta de itinerarios
+  itineraryLine = 'http://www.poatransporte.com.br/php/facades/process.php?a=il&p=';
 
   constructor(private http: HttpClient) { }
 
+  //Faz a conexão com a API de onibus
   callBus() {
-    return this.http.get<any[]>(`${this.linhasOnibus}`);
+    return this.http.get<any[]>(`${this.busLine}`);
   }
 
+  //Faz a conexão com a API de onibus
   callLotation() {
-    return this.http.get<any[]>(`${this.linhasLotacao}`);
+    return this.http.get<any[]>(`${this.lotationLine}`);
   }
 
+  //Faz a conexão com a API de onibus
   callItinerary(id: number) {
-    return this.http.get<any[]>(`${this.linhasItinerario}${id}`);
+    return this.http.get<any[]>(`${this.itineraryLine}${id}`);
   }
 }
