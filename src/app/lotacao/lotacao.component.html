@@ -1,0 +1,55 @@
+<header class="header sticky-top">
+    <h1 class="text">Linhas de Lotação</h1>
+</header>
+<div class="center">
+    <button class="btn btn-outline-dark btn-md" data-toggle="tooltip" title="Voltar para a pagina anterior" (click)="back()">voltar</button>
+    <table *ngIf="list" datatable class="cell-border compact hover">
+        <thead class="table-head">
+        <tr>
+            <th>ID</th>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Ver Mais</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of list">
+            <td>{{item.id}}</td>
+            <td>{{item.codigo}}</td>
+            <td>{{item.nome}}</td>
+            <td>
+                <a routerLink="/lotacao/itinerario-lotacao/{{item.id}}">
+                    <button class="btn btn-outline-dark btn-sm" data-toggle="tooltip" title="Mostrar detalhes da linhas">Mais Detalhes</button>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer class="footer">
+    <div class="container padding icons">
+        <div class="row text-center">
+            <div class="col">
+                <h4>Contato</h4>
+                <hr class="line">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="https://www.facebook.com/fernando.rohr.58/" data-toggle="tooltip" title="https://www.facebook.com/fernando.rohr.58/" target="_blank">
+                    <img src="../../assets/img/icons/fb.svg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://github.com/fernandorohr" data-toggle="tooltip" title="https://github.com/fernandorohr" target="_blank">
+                    <img src="../../assets/img/icons/github.svg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/fernando-rohr/" data-toggle="tooltip" title="https://www.linkedin.com/in/fernando-rohr/" target="_blank">
+                    <img src="../../assets/img/icons/linkedin.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    background-color: #303030;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.text {
+    color: white;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.center {
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    min-height: 380px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.table-head {
+    background-color: #303030;
+    color: white;
+}
+
+.footer {
+    position: relative;
+    height: 100px;
+    background-color: #303030;
+}
+
+.icons {
+    color: white;
+    max-width: 250px;
+}
+
+.line {
+    background-color: white;
+}

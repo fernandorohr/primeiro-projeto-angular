@@ -1,0 +1,13 @@
+body {
+    position: relative;
+    /* background-color: #bababa; */
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    margin-top: 15px;
+    background-color: #303030;
+    /* border: dotted red 2px; */
+}

@@ -1,0 +1,49 @@
+.header {
+    position: relative;
+    background-color: #303030;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.text {
+    /* margin-top: 10px; */
+    color: white;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.center {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 380px;
+    /* border: dotted red 2px; */
+    text-align: center;
+    vertical-align: center;
+}
+
+.table-head {
+    background-color: #303030;
+    color: white;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    margin-top: 15px;
+    background-color: #303030;
+    /* border: dotted red 2px; */
+}
+
+.icons {
+    color: white;
+    max-width: 250px;
+}
+
+.line {
+    background-color: white;
+}
