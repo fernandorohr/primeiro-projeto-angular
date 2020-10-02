@@ -11,6 +11,7 @@ import { LotacaoComponent } from './lotacao/lotacao.component';
 import { OnibusService } from './onibus.service';
 import { ItinerarioOnibusComponent } from './itinerario-onibus/itinerario-onibus.component';
 import { ItinerarioLotacaoComponent } from './itinerario-lotacao/itinerario-lotacao.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ItinerarioLotacaoComponent } from './itinerario-lotacao/itinerario-lota
     OnibusComponent,
     LotacaoComponent,
     ItinerarioOnibusComponent,
-    ItinerarioLotacaoComponent
+    ItinerarioLotacaoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

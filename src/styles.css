@@ -18,6 +18,7 @@
     position: relative;
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 110px;
     min-height: 500px;
     text-align: center;
     vertical-align: center;
@@ -41,8 +42,9 @@
 }
 
 .footer {
-    position: relative;
-    margin-top: 15px;
+    position: fixed;
+    bottom: 0;
+    /* margin-top: 15px; */
     height: 100px;
     background-color: #303030;
 }
