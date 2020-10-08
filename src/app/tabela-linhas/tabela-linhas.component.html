@@ -1,49 +1,22 @@
-<!-- <div class="hide" routerLink="/onibus" [routerLinkActive]="['show']" [routerLinkActiveOptions]="{exact: true}"> -->
-    <table *ngIf="list" datatable class="cell-border compact hover">
-        <thead class="table-head">
-        <tr>
-            <th data-toggle="tooltip" title="Ordenar por ID">ID</th>
-            <th data-toggle="tooltip" title="Ordenar por Codigo">Codigo</th>
-            <th data-toggle="tooltip" title="Ordenar por Nome">Nome</th>
-            <th>Ver Mais</th>
-        </tr>
-        </thead>
-        <tbody class="table-body">
-        <tr *ngFor="let item of list">
-            <td>{{item.id}}</td>
-            <td>{{item.codigo}}</td>
-            <td>{{item.nome}}</td>
-            <td>
-                <a routerLink="/itinerario/{{item.id}}">
-                    <button class="btn btn-outline-dark btn-sm" data-toggle="tooltip" title="Mostrar detalhes da linha">Mais Detalhes</button>
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-<!-- </div>    -->
-
-<!-- <div class="hide" routerLink="/lotacao" [routerLinkActive]="['show']" [routerLinkActiveOptions]="{exact: true}">
-    <table *ngIf="listLotation" datatable class="cell-border compact hover">
-        <thead class="table-head">
-        <tr>
-            <th data-toggle="tooltip" title="Ordenar por ID">ID</th>
-            <th data-toggle="tooltip" title="Ordenar por Codigo">Codigo</th>
-            <th data-toggle="tooltip" title="Ordenar por Nome">Nome</th>
-            <th>Ver Mais</th>
-        </tr>
-        </thead>
-        <tbody class="table-body">
-        <tr *ngFor="let item of listLotation">
-            <td>{{item.id}}</td>
-            <td>{{item.codigo}}</td>
-            <td>{{item.nome}}</td>
-            <td>
-                <a routerLink="/itinerario/{{item.id}}">
-                    <button class="btn btn-outline-dark btn-sm" data-toggle="tooltip" title="Mostrar detalhes da linha">Mais Detalhes</button>
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>    -->
+<table *ngIf="list" datatable class="cell-border compact hover">
+    <thead class="table-head">
+    <tr>
+        <th data-toggle="tooltip" title="Ordenar por ID">ID</th>
+        <th data-toggle="tooltip" title="Ordenar por Codigo">Codigo</th>
+        <th data-toggle="tooltip" title="Ordenar por Nome">Nome</th>
+        <th>Ver Mais</th>
+    </tr>
+    </thead>
+    <tbody class="table-body">
+    <tr *ngFor="let item of list">
+        <td>{{item.id}}</td>
+        <td>{{item.codigo}}</td>
+        <td>{{item.nome}}</td>
+        <td>
+            <a routerLink="/itinerario/{{item.id}}">
+                <button class="btn btn-outline-dark btn-sm" data-toggle="tooltip" title="Mostrar detalhes da linha">Mais Detalhes</button>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>

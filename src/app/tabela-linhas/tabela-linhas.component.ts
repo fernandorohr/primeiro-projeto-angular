@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Location } from '@angular/common';
 
 import { OnibusService } from '../onibus.service';
 
@@ -9,19 +12,37 @@ import { OnibusService } from '../onibus.service';
 })
 export class TabelaLinhasComponent implements OnInit {
 
+  option: number;
   list: Array<any>;
 
   constructor(
-    private onibusService: OnibusService
+    private onibusService: OnibusService,
+    private route: ActivatedRoute,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
     this.createList();
+    // this.option = history.state.data
+    // console.log(this.option);
+    if (this.list == undefined) {
+      this.list = this.onibusService.data;
+    }
   }
 
   createList(): void {
-    this.onibusService.callBus()
-      .subscribe(data => this.list = data);
+    this.option = history.state.data;
+    console.log(this.option);
+
+    if (this.option == 1) {
+      this.onibusService.callBus()
+        .subscribe(data => this.list = data);
+    }
+    
+    if (this.option == 2) {
+      this.onibusService.callLotation()
+        .subscribe(data => this.list = data);
+    }
   }
 
 }

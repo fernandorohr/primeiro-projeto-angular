@@ -4,10 +4,10 @@
         <h1 class="welcome-text display-4">Escolha qual linha consultar</h1>
         <div class="row center-button">
             <div class="col">
-                <button class="btn btn-outline-dark btn-lg" data-toggle="tooltip" title="Selecione as linhas de Ônibus" type="button" routerLink="/onibus">Onibus</button>
+                <button class="btn btn-outline-dark btn-lg" data-toggle="tooltip" title="Selecione as linhas de Ônibus" (click)="createListBus()" routerLink="/onibus" [state]="{data: 1}">Onibus</button>
             </div>
             <div class="col">
-                <button class="btn btn-outline-dark btn-lg" data-toggle="tooltip" title="Selecione as linhas de Lotação" routerLink="/lotacao">Lotação</button>
+                <button class="btn btn-outline-dark btn-lg" data-toggle="tooltip" title="Selecione as linhas de Lotação" (click)="createListLotation()" routerLink="/lotacao" [state]="{data: 2}">Lotação</button>
             </div>
         </div>
     </div>

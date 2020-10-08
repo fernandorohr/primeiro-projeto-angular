@@ -13,16 +13,9 @@ export class ItinerarioOnibusComponent implements OnInit {
 
   list: Array<any>;
 
-  constructor(
-    private location: Location,
-  ) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-  }
-
-  //função que volta pra página anterior
-  back(): void {
-    this.location.back();
   }
 
 }
