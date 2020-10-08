@@ -12,6 +12,10 @@ import { OnibusService } from './onibus.service';
 import { ItinerarioOnibusComponent } from './itinerario-onibus/itinerario-onibus.component';
 import { ItinerarioLotacaoComponent } from './itinerario-lotacao/itinerario-lotacao.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { TabelaLinhasComponent } from './tabela-linhas/tabela-linhas.component';
+import { TabelaItinerarioComponent } from './tabela-itinerario/tabela-itinerario.component';
+import { BotaoVoltarComponent } from './botao-voltar/botao-voltar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FooterComponent } from './footer/footer.component';
     LotacaoComponent,
     ItinerarioOnibusComponent,
     ItinerarioLotacaoComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    TabelaLinhasComponent,
+    TabelaItinerarioComponent,
+    BotaoVoltarComponent
   ],
   imports: [
     BrowserModule,

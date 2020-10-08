@@ -10,7 +10,7 @@ import { ItinerarioLotacaoComponent } from './itinerario-lotacao/itinerario-lota
 const routes: Routes = [
   {path: 'home', component: PaginaInicialComponent},
   {path: 'onibus', component: OnibusComponent},
-  {path: 'onibus/itinerario-onibus/:id', component: ItinerarioOnibusComponent},
+  {path: 'itinerario/:id', component: ItinerarioOnibusComponent},
   {path: 'lotacao', component: LotacaoComponent},
   {path: 'lotacao/itinerario-lotacao/:id', component: ItinerarioLotacaoComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}

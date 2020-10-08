@@ -13,24 +13,9 @@ export class OnibusComponent implements OnInit {
   // dtOptions: DataTables.Settings = {};
   list: Array<any>;
 
-  constructor(
-    private location: Location,
-    private onibusService: OnibusService
-    ) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-    this.createList();
-  }
-
-  //função que volta pra página anterior
-  back(): void {
-    this.location.back();
-  }
-
-  //chama a função no onibusService para fazer a consulta na API de linhas de onibus e salva no vetor list
-  createList(): void {
-    this.onibusService.callBus()
-      .subscribe(data => this.list = data);
   }
 
 }

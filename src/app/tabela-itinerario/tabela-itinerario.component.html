@@ -1,0 +1,18 @@
+<table *ngIf="list | keyvalue" datatable class="cell-border compact hover">
+    <thead class="table-head">
+    <tr>
+        <th data-toggle="tooltip" title="Ordenar por Parada">Parada</th>
+        <th>MAPA</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of list | keyvalue">
+        <td>Parada: {{item.key}}</td>
+        <td>
+            <a href="https://www.google.com/maps/?q={{item.value.lat}},{{item.value.lng}}" target="_blank">
+                <button class="btn btn-outline-dark btn-sm" data-toggle="tooltip" title="Acessar a localização no Google Maps">Ver no Maps</button>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
